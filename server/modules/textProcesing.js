@@ -1,7 +1,7 @@
 import { OpenAI } from 'openai';
 
 const openai = new OpenAI({
-    apiKey: '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',
+    apiKey: process.env.OPENAI_API_KEY,
 });
 
 export async function processTextWithGPT(text) {
